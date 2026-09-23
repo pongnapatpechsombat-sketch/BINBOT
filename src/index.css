@@ -1,0 +1,90 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Prompt', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #f8fafc;
+    color: #0f172a;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  .dark body,
+  :root.dark body {
+    background-color: #0f172a;
+    color: #f8fafc;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* === Custom Animations === */
+
+/* Red glow pulse for full-bin card border */
+@keyframes pulse-red-glow {
+  0%, 100% {
+    box-shadow:
+      0 4px 28px -4px rgba(239, 68, 68, 0.35),
+      0 0 0 2px rgba(239, 68, 68, 0.25);
+  }
+  50% {
+    box-shadow:
+      0 4px 40px 0px rgba(239, 68, 68, 0.7),
+      0 0 0 3px rgba(239, 68, 68, 0.55);
+  }
+}
+
+.animate-pulse-red-glow {
+  animation: pulse-red-glow 2s ease-in-out infinite;
+}
+
+/* Blue-green pulse for lid-open badge */
+@keyframes lid-open-pulse {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 6px 1px rgba(34, 211, 238, 0.35);
+  }
+  50% {
+    opacity: 0.75;
+    box-shadow: 0 0 14px 3px rgba(52, 211, 153, 0.5);
+  }
+}
+
+.animate-lid-open {
+  animation: lid-open-pulse 1.2s ease-in-out infinite;
+}

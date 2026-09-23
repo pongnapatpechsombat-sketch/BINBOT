@@ -1,0 +1,54 @@
+[
+  {
+    "binId": "BIN01",
+    "binName": "ถังขยะโซน A (โถงกลางอาคาร)",
+    "binSizeLiters": 120,
+    "fillLevel": 45,
+    "lidStatus": "closed",
+    "binStatus": "normal",
+    "ledStatus": "green",
+    "lidOpenCountToday": 24,
+    "fullEventCountToday": 0,
+    "deviceStatus": "online",
+    "lastUpdated": "2026-09-15T17:35:10+07:00"
+  },
+  {
+    "binId": "BIN02",
+    "binName": "ถังขยะโซน B (ศูนย์อาหาร)",
+    "binSizeLiters": 120,
+    "fillLevel": 84,
+    "lidStatus": "closed",
+    "binStatus": "warning",
+    "ledStatus": "yellow",
+    "lidOpenCountToday": 58,
+    "fullEventCountToday": 0,
+    "deviceStatus": "online",
+    "lastUpdated": "2026-09-15T17:36:22+07:00"
+  },
+  {
+    "binId": "BIN03",
+    "binName": "ถังขยะโซน C (สวนสุขภาพกลางแจ้ง)",
+    "binSizeLiters": 80,
+    "fillLevel": 62,
+    "lidStatus": "closed",
+    "binStatus": "normal",
+    "ledStatus": "green",
+    "lidOpenCountToday": 14,
+    "fullEventCountToday": 0,
+    "deviceStatus": "offline",
+    "lastUpdated": "2026-09-15T13:12:45+07:00"
+  },
+  {
+    "binId": "BIN04",
+    "binName": "ถังขยะโซน D (หน้าอาคารอำนวยการ)",
+    "binSizeLiters": 120,
+    "fillLevel": 97,
+    "lidStatus": "closed",
+    "binStatus": "full",
+    "ledStatus": "red",
+    "lidOpenCountToday": 71,
+    "fullEventCountToday": 2,
+    "deviceStatus": "online",
+    "lastUpdated": "2026-09-15T17:37:05+07:00"
+  }
+]
